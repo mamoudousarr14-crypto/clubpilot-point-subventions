@@ -4,6 +4,8 @@ Formulaire autonome destiné aux clubs de football amateur normands et diffusé 
 
 Les réponses sont transmises à Google Sheets par une application web Google Apps Script. L'analyse des réponses et la rédaction du point personnalisé restent humaines.
 
+La documentation complète d'exploitation est disponible dans [DOCUMENTATION.md](./DOCUMENTATION.md).
+
 ## Développement local
 
 ```bash
