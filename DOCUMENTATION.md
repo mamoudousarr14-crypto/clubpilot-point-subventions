@@ -10,7 +10,7 @@ Le formulaire sert à qualifier rapidement la situation d'un club concernant les
 
 ## 2. Liens utiles
 
-- Formulaire public : <https://mamoudousarr14-crypto.github.io/clubpilot-point-subventions/>
+- Formulaire public : <https://point.clubpilot.fr/>
 - Dépôt GitHub : <https://github.com/mamoudousarr14-crypto/clubpilot-point-subventions>
 - Point de réception Google Apps Script : <https://script.google.com/macros/s/AKfycbxN4Ui51FEH-f_OGzuTE9ZWODRFIx8vbMPqrmqF3wu0uXHK_mYwSPPoIsSH4KDzgYP8yg/exec>
 - Site principal : <https://clubpilot.fr/>
@@ -161,7 +161,7 @@ GitHub Pages publie le contenu du dossier `docs` depuis la branche `main` :
 - branche : `main`
 - dossier : `/docs`
 - HTTPS : activé
-- domaine actuel : `mamoudousarr14-crypto.github.io`
+- domaine personnalisé : `point.clubpilot.fr`
 
 Le formulaire n'est pas relié à la navigation ou aux appels à l'action du site ClubPilot principal.
 
@@ -221,7 +221,7 @@ Le champ anti-robot réduit les soumissions simples automatisées, mais ne const
 
 Effectuer ce test après toute modification importante :
 
-1. Ouvrir <https://mamoudousarr14-crypto.github.io/clubpilot-point-subventions/>.
+1. Ouvrir <https://point.clubpilot.fr/>.
 2. Vérifier qu'une étape vide refuse de continuer.
 3. Tester la sélection puis la désélection de `Aucun autre` à la question 2.
 4. Tester le bouton `Retour` et vérifier que les réponses sont conservées.
@@ -289,14 +289,14 @@ Après une modification du code Apps Script :
 5. Sélectionner une nouvelle version.
 6. Déployer.
 7. Conserver l'URL `/exec` si Google ne la change pas ; sinon, mettre à jour la balise `clubpilot-form-endpoint` dans `index.html`.
-8. Recompiler, recopier `dist/` dans `docs/`, pousser sur GitHub et effectuer une soumission test.
+8. Lancer `npm run build`, pousser le dossier `docs/` sur GitHub et effectuer une soumission test.
 
 ## 14. Diagnostic rapide
 
 ### Le formulaire s'affiche mais aucun bouton ne fonctionne
 
 - Vérifier dans les outils du navigateur que le fichier JavaScript est chargé.
-- Vérifier que le chemin `/clubpilot-point-subventions/assets/...` répond sans erreur 404.
+- Vérifier que le chemin `/assets/...` répond sans erreur 404.
 - Recompiler et republier le dossier `docs`.
 
 ### Le formulaire affiche une erreur de configuration

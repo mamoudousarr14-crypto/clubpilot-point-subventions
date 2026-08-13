@@ -15,4 +15,8 @@ npm run dev
 
 ## Publication
 
-Le contenu compilé du dossier `docs` est publié avec GitHub Pages depuis la branche `main`.
+Le contenu compilé du dossier `docs` est publié avec GitHub Pages depuis la branche `main` sur <https://point.clubpilot.fr/>.
+
+```bash
+npm run build
+```

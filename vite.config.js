@@ -1,6 +1,8 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/clubpilot-point-subventions/",
+  base: "/",
+  build: {
+    outDir: "docs",
+  },
 });
-
